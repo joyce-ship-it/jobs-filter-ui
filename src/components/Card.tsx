@@ -12,8 +12,11 @@ export type jobTypes = {
   location: string;
   languages: string[];
   tools: string[];
+};
+type handleFilterProps = {
   handleFilter: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
+type CardProps = Omit<jobTypes, "id"> & handleFilterProps;
 
 export default function Card({
   company,
@@ -29,7 +32,7 @@ export default function Card({
   languages,
   tools,
   handleFilter,
-}: jobTypes) {
+}: CardProps) {
   return (
     <div className="flex w-full max-w-[1200px] flex-col gap-6 rounded bg-[#052f4a] p-4 text-neutral-200 hover:border-l-10 hover:border-neutral-900 md:flex-row md:items-center md:justify-between">
       <div className="border-cyan border-b-1 py-4 md:border-0">
