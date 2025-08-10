@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/joyce-ship-it/jobs-filter-ui]
+- Live Site URL: [https://6898ee68c4e4d000087304ce--jobs-filter-ui.netlify.app/]
 
 ## My process
 
