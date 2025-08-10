@@ -10,6 +10,9 @@ function App() {
   const [selectedKeywords, setSelectedKeywords] = React.useState<string[]>([]);
   function handleSelectedKeywords(event: React.MouseEvent<HTMLButtonElement>) {
     const newWords = event.currentTarget.textContent;
+    if (!newWords) {
+      return;
+    }
     setSelectedKeywords((prevVal) => {
       return prevVal.includes(newWords) ? prevVal : [...prevVal, newWords];
     });
